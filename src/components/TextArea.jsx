@@ -24,7 +24,7 @@ const TextArea = ({ setTrans, data, to, setFrom, setText }) => {
                     <option key={idx} value={getLangCode(data, lang)}>{lang}</option>
                 ))}
             </select>
-            <textarea name="translate" cols="30" onChange={textChange} spellCheck={false} rows="10" placeholder='Type here...' className={"rounded-md resize-none text-[18px] font-semibold text-gray-600 p-1 h-auto outline-none "}></textarea>
+            <textarea name="translate" cols="30" onChange={textChange} spellCheck={false} rows="10" placeholder='Type here...' className={"rounded-md resize-none text-[18px] font-semibold text-gray-600 p-1 h-auto outline-none scrollbar scrollbar-thin scrollbar-track-gray-200 scrollbar-thumb-gray-400"}></textarea>
         </div>
     )
 };

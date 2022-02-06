@@ -21,7 +21,7 @@ const TransArea = ({ data, setTo, trans, from, to, setTrans, text }) => {
                     <option key={idx} value={getLangCode(data, lang)}>{lang}</option>
                 ))}
             </select>
-            <textarea className='w-full h-auto bg-white rounded-md outline-none resize-none text-[18px] font-semibold text-gray-600 p-1' placeholder='Translate here...' readOnly cols="30" rows="10" value={trans}></textarea>
+            <textarea className='w-full h-auto bg-white rounded-md outline-none resize-none text-[18px] font-semibold text-gray-600 p-1 scrollbar scrollbar-thin scrollbar-track-gray-200 scrollbar-thumb-gray-400' placeholder='Translate here...' readOnly cols="30" rows="10" value={trans}></textarea>
         </div>
     )
 };

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import TextArea from './components/TextArea';
 import Axios from "axios";
 import TransArea from './components/TransArea';
+import "./App.css";
 
 function App() {
   const [langs, setLangs] = useState({});
@@ -24,9 +25,11 @@ function App() {
   }, []);
 
   return (
-    <div className="container mx-auto p-1 md:p-3 flex flex-col md:flex-row gap-2 font-roboto">
-      <TextArea data={langs} setTrans={setTrans} to={to} setFrom={setFrom} setText={setText} text={text} />
-      <TransArea data={langs} trans={trans} setTo={setTo} from={from} text={text} setTrans={setTrans} />
+    <div className="App w-full h-screen">
+      <div className="container mx-auto p-1 md:p-3 flex flex-col md:flex-row gap-2 font-roboto">
+        <TextArea data={langs} setTrans={setTrans} to={to} setFrom={setFrom} setText={setText} text={text} />
+        <TransArea data={langs} trans={trans} setTo={setTo} from={from} text={text} setTrans={setTrans} />
+      </div>
     </div>
   )
 }
